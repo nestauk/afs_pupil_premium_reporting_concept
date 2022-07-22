@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html lang="en" class="govuk-template app-html-class">
+  <head>
+    <meta charset="utf-8" />
+    <title>Browse strategies - Pupil Premium Reporting</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="blue" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link
+      rel="shortcut icon"
+      sizes="16x16 32x32 48x48"
+      href="./assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="mask-icon"
+      href="./assets/images/govuk-mask-icon.svg"
+      color="blue"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/images/govuk-apple-touch-icon-180x180.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="167x167"
+      href="./assets/images/govuk-apple-touch-icon-167x167.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./assets/images/govuk-apple-touch-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="./assets/images/govuk-apple-touch-icon.png"
+    />
+
+    <link rel="stylesheet" href="./stylesheets/govuk-frontend-4.2.0.min.css" />
+    <link rel="stylesheet" href="./stylesheets/custom.css" />
+    <link rel="stylesheet" href="./stylesheets/main.css" />
+  </head>
+
+  <body
+    class="govuk-template__body app-body-class"
+    data-test="My value"
+    data-other="report:details"
+  >
+    <script>
+      document.body.className = document.body.className
+        ? document.body.className + " js-enabled"
+        : "js-enabled";
+    </script>
+    <!-- <div
+      class="govuk-cookie-banner"
+      data-nosnippet
+      role="region"
+      aria-label="Cookies on [name of service]"
+    >
+      <div class="govuk-cookie-banner__message govuk-width-container">
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-two-thirds">
+            <h2 class="govuk-cookie-banner__heading govuk-heading-m">
+              Cookies on [name of service]
+            </h2>
+
+            <div class="govuk-cookie-banner__content">
+              <p class="govuk-body">
+                We use some essential cookies to make this service work.
+              </p>
+              <p class="govuk-body">
+                We'd also like to use analytics cookies so we can understand how
+                you use the service and make improvements.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="govuk-button-group">
+          <button
+            value="accept"
+            type="button"
+            name="cookies"
+            class="govuk-button"
+            data-module="govuk-button"
+          >
+            Accept analytics cookies
+          </button>
+          <button
+            value="reject"
+            type="button"
+            name="cookies"
+            class="govuk-button"
+            data-module="govuk-button"
+          >
+            Reject analytics cookies
+          </button>
+          <a class="govuk-link govuk-link--no-visited-state" href="#">View cookies</a>
+        </div>
+      </div>
+    </div> -->
+
+    <a
+      href="#main-content"
+      class="govuk-skip-link"
+      data-module="govuk-skip-link"
+      >Skip to main content</a
+    >
+
+    <header class="govuk-header" role="banner" data-module="govuk-header">
+      <div class="govuk-header__container govuk-width-container">
+        <div class="govuk-header__logo">
+          <a href="#" class="govuk-header__link govuk-header__link--homepage">
+            <span class="govuk-header__logotype">
+              <!--[if gt IE 8]><!-->
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                class="govuk-header__logotype-crown"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 132 97"
+                height="30"
+                width="36"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M25 30.2c3.5 1.5 7.7-.2 9.1-3.7 1.5-3.6-.2-7.8-3.9-9.2-3.6-1.4-7.6.3-9.1 3.9-1.4 3.5.3 7.5 3.9 9zM9 39.5c3.6 1.5 7.8-.2 9.2-3.7 1.5-3.6-.2-7.8-3.9-9.1-3.6-1.5-7.6.2-9.1 3.8-1.4 3.5.3 7.5 3.8 9zM4.4 57.2c3.5 1.5 7.7-.2 9.1-3.8 1.5-3.6-.2-7.7-3.9-9.1-3.5-1.5-7.6.3-9.1 3.8-1.4 3.5.3 7.6 3.9 9.1zm38.3-21.4c3.5 1.5 7.7-.2 9.1-3.8 1.5-3.6-.2-7.7-3.9-9.1-3.6-1.5-7.6.3-9.1 3.8-1.3 3.6.4 7.7 3.9 9.1zm64.4-5.6c-3.6 1.5-7.8-.2-9.1-3.7-1.5-3.6.2-7.8 3.8-9.2 3.6-1.4 7.7.3 9.2 3.9 1.3 3.5-.4 7.5-3.9 9zm15.9 9.3c-3.6 1.5-7.7-.2-9.1-3.7-1.5-3.6.2-7.8 3.7-9.1 3.6-1.5 7.7.2 9.2 3.8 1.5 3.5-.3 7.5-3.8 9zm4.7 17.7c-3.6 1.5-7.8-.2-9.2-3.8-1.5-3.6.2-7.7 3.9-9.1 3.6-1.5 7.7.3 9.2 3.8 1.3 3.5-.4 7.6-3.9 9.1zM89.3 35.8c-3.6 1.5-7.8-.2-9.2-3.8-1.4-3.6.2-7.7 3.9-9.1 3.6-1.5 7.7.3 9.2 3.8 1.4 3.6-.3 7.7-3.9 9.1zM69.7 17.7l8.9 4.7V9.3l-8.9 2.8c-.2-.3-.5-.6-.9-.9L72.4 0H59.6l3.5 11.2c-.3.3-.6.5-.9.9l-8.8-2.8v13.1l8.8-4.7c.3.3.6.7.9.9l-5 15.4v.1c-.2.8-.4 1.6-.4 2.4 0 4.1 3.1 7.5 7 8.1h.2c.3 0 .7.1 1 .1.4 0 .7 0 1-.1h.2c4-.6 7.1-4.1 7.1-8.1 0-.8-.1-1.7-.4-2.4V34l-5.1-15.4c.4-.2.7-.6 1-.9zM66 92.8c16.9 0 32.8 1.1 47.1 3.2 4-16.9 8.9-26.7 14-33.5l-9.6-3.4c1 4.9 1.1 7.2 0 10.2-1.5-1.4-3-4.3-4.2-8.7L108.6 76c2.8-2 5-3.2 7.5-3.3-4.4 9.4-10 11.9-13.6 11.2-4.3-.8-6.3-4.6-5.6-7.9 1-4.7 5.7-5.9 8-.5 4.3-8.7-3-11.4-7.6-8.8 7.1-7.2 7.9-13.5 2.1-21.1-8 6.1-8.1 12.3-4.5 20.8-4.7-5.4-12.1-2.5-9.5 6.2 3.4-5.2 7.9-2 7.2 3.1-.6 4.3-6.4 7.8-13.5 7.2-10.3-.9-10.9-8-11.2-13.8 2.5-.5 7.1 1.8 11 7.3L80.2 60c-4.1 4.4-8 5.3-12.3 5.4 1.4-4.4 8-11.6 8-11.6H55.5s6.4 7.2 7.9 11.6c-4.2-.1-8-1-12.3-5.4l1.4 16.4c3.9-5.5 8.5-7.7 10.9-7.3-.3 5.8-.9 12.8-11.1 13.8-7.2.6-12.9-2.9-13.5-7.2-.7-5 3.8-8.3 7.1-3.1 2.7-8.7-4.6-11.6-9.4-6.2 3.7-8.5 3.6-14.7-4.6-20.8-5.8 7.6-5 13.9 2.2 21.1-4.7-2.6-11.9.1-7.7 8.8 2.3-5.5 7.1-4.2 8.1.5.7 3.3-1.3 7.1-5.7 7.9-3.5.7-9-1.8-13.5-11.2 2.5.1 4.7 1.3 7.5 3.3l-4.7-15.4c-1.2 4.4-2.7 7.2-4.3 8.7-1.1-3-.9-5.3 0-10.2l-9.5 3.4c5 6.9 9.9 16.7 14 33.5 14.8-2.1 30.8-3.2 47.7-3.2z"
+                ></path>
+              </svg>
+              <!--<![endif]-->
+              <!--[if IE 8]>
+                <img
+                  src="./assets/images/govuk-logotype-crown.png"
+                  class="govuk-header__logotype-crown-fallback-image"
+                  width="36"
+                  height="32"
+                />
+              <![endif]-->
+              <span class="govuk-header__logotype-text"> GOV.UK </span>
+            </span>
+          </a>
+        </div>
+        <div class="govuk-header__content">
+          <a href="#" class="govuk-header__link govuk-header__service-name">
+            Pupil Premium Reporting
+          </a>
+          <!-- <nav aria-label="Menu" class="govuk-header__navigation">
+            <button
+              type="button"
+              class="govuk-header__menu-button govuk-js-header-toggle"
+              aria-controls="navigation"
+              aria-label="Show or hide menu"
+            >
+              Menu
+            </button>
+
+            <ul id="navigation" class="govuk-header__navigation-list">
+              <li
+                class="govuk-header__navigation-item govuk-header__navigation-item--active"
+              >
+                <a class="govuk-header__link" href="#1"> Navigation item 1 </a>
+              </li>
+              <li class="govuk-header__navigation-item">
+                <a class="govuk-header__link" href="#2"> Navigation item 2 </a>
+              </li>
+              <li class="govuk-header__navigation-item">
+                <a class="govuk-header__link" href="#3"> Navigation item 3 </a>
+              </li>
+            </ul>
+          </nav> -->
+        </div>
+      </div>
+    </header>
+
+    <div class="govuk-width-container app-width-container">
+      <div class="govuk-phase-banner">
+        <p class="govuk-phase-banner__content">
+          <strong class="govuk-tag govuk-phase-banner__content__tag">
+            concept
+          </strong>
+          <span class="govuk-phase-banner__text">
+            This is a concept service, it does not work. See a
+            <a href="index.html" class="govuk-link govuk-link--no-visited-state"
+              >list of all views</a
+            >.
+          </span>
+        </p>
+      </div>
+
+      <!-- <div class="govuk-breadcrumbs">
+        <ol class="govuk-breadcrumbs__list">
+          <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link" href="index.html">Home</a>
+          </li>
+          <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link" href="strategies-show.html"
+              >Your strategy</a
+            >
+          </li>
+        </ol>
+      </div> -->
+
+      <a href="index.html" class="govuk-back-link">Back</a>
+
+      <main class="govuk-main-wrapper" id="main-content" role="main">
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-full govuk-!-margin-bottom-4">
+            <h1 class="govuk-heading-l">Browse pupil premium strategies</h1>
+
+            <hr
+              class="govuk-section-break govuk-section-break--l govuk-section-break--visible"
+            />
+          </div>
+        </div>
+
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-one-third-from-desktop">
+            <div class="filter-form">
+              <form
+                id="SearchFacetsForm"
+                method="get"
+                action="/find-a-school-in-england"
+                class="js-live-search-form"
+              >
+                <div
+                  v-show="presentDesktopView || displayFilters"
+                  v-bind:class="['spt-all-filter-container', presentDesktopView? 'desktop-filters': '']"
+                >
+                  <div
+                    id="EditSearchCollapse"
+                    aria-expanded="true"
+                  >
+
+                    <div class="filter-header no-js-hidden">
+                      <!-- <a
+                        href="#"
+                        class="filter-cancel no-js-hidden"
+                        v-on:click.prevent="displayFilters=false"
+                        v-show="!presentDesktopView"
+                        >Back</a
+                      > -->
+                      <h3 class="heading-small">Filters</h3>
+                      <a
+                        href="#"
+                        class="filter-clear no-js-hidden"
+                        v-on:click.prevent="clearFilters"
+                        >Clear all filters</a
+                      >
+                    </div>
+
+                    <div class="spt-filter-container">
+                      <div class="container-head">
+                        <div class="filter-item">
+                          <span tabindex="0">Education phase</span>
+                        </div>
+                        <div class="modal-filter education-phase">
+                          <a
+                            href="#"
+                            class="js-modal help-info"
+                            data-help-modal="true"
+                            data-modal-title="Key stages"
+                            data-modal-text='&lt;p class="table-label"&gt;R = Reception&lt;/p&gt;&lt;table class="tg"&gt;    &lt;thead&gt;    &lt;tr&gt;        &lt;th class="tg-6f4q"&gt;Phase&lt;/th&gt;        &lt;th class="tg-6f4q" colspan="2"&gt;Primary&lt;/th&gt;        &lt;th class="tg-6f4q" colspan="2"&gt;Secondary&lt;/th&gt;        &lt;th class="tg-6f4q"&gt;16-18&lt;/th&gt;    &lt;/tr&gt;    &lt;/thead&gt;    &lt;tbody&gt;    &lt;tr&gt;        &lt;td class="tg-6f4q"&gt;Key stage&lt;/td&gt;        &lt;td class="tg-6f4q"&gt;KS1&lt;/td&gt;        &lt;td class="tg-6f4q"&gt;KS2&lt;/td&gt;        &lt;td class="tg-6f4q"&gt;KS3&lt;/td&gt;        &lt;td class="tg-6f4q"&gt;KS4&lt;/td&gt;        &lt;td class="tg-6f4q"&gt;-&lt;/td&gt;    &lt;/tr&gt;    &lt;tr&gt;        &lt;td class="tg-6f4q"&gt;School years&lt;/td&gt;        &lt;td class="tg-lrzf"&gt;R-2&lt;/td&gt;        &lt;td class="tg-lrzf"&gt;3-6&lt;/td&gt;        &lt;td class="tg-lrzf"&gt;7-9&lt;/td&gt;        &lt;td class="tg-lrzf"&gt;10-11&lt;/td&gt;        &lt;td class="tg-lrzf"&gt;12-14&lt;/td&gt;    &lt;/tr&gt;    &lt;tr&gt;        &lt;td class="tg-6f4q"&gt;Typical ages&lt;/td&gt;        &lt;td class="tg-lrzf"&gt;4-7&lt;/td&gt;        &lt;td class="tg-lrzf"&gt;7-11&lt;/td&gt;        &lt;td class="tg-lrzf"&gt;11-14&lt;/td&gt;        &lt;td class="tg-lrzf"&gt;14-16&lt;/td&gt;        &lt;td class="tg-lrzf"&gt;16-18&lt;/td&gt;    &lt;/tr&gt;    &lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;a href="https://www.gov.uk/national-curriculum/overview" target="_blank"&gt;National curriculum&lt;/a&gt; - further information on key stages and assessments taken.&lt;/p&gt;'
+                            data-modal-close-text="Close"
+                            data-modal-close-title="Close"
+                            data-help-text-key=""
+                          >
+                            <span class="visuallyhidden"
+                              >Open help text for Key stages opens a popup
+                            </span>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="spt-filter-box" id="schoolLevel">
+                        <fieldset>
+                          <legend class="visuallyhidden">
+                            Select an option below to filter the results
+                          </legend>
+                          <div class="filter-wrapper">
+                            <input
+                              name="schoollevel"
+                              value="all"
+                              id="Allall"
+                              type="radio"
+                              aria-controls="js-search-results-info"
+                              v-model="filters.schoollevel"
+                              v-on:change="filterMaybe"
+                              class="filter-input"
+                            />
+                            <label class="filter-radio" for="Allall">
+                              All
+                            </label>
+                          </div>
+                          <div class="filter-wrapper">
+                            <input
+                              name="schoollevel"
+                              value="IsPrimary"
+                              id="PrimaryIsPrimary"
+                              type="radio"
+                              aria-controls="js-search-results-info"
+                              v-model="filters.schoollevel"
+                              v-on:change="filterMaybe"
+                              class="filter-input"
+                            />
+                            <label class="filter-radio" for="PrimaryIsPrimary">
+                              Primary
+                            </label>
+                          </div>
+                          <div class="filter-wrapper">
+                            <input
+                              name="schoollevel"
+                              value="IsSecondary"
+                              id="SecondaryIsSecondary"
+                              type="radio"
+                              aria-controls="js-search-results-info"
+                              v-model="filters.schoollevel"
+                              v-on:change="filterMaybe"
+                              class="filter-input"
+                            />
+                            <label
+                              class="filter-radio"
+                              for="SecondaryIsSecondary"
+                            >
+                              Secondary
+                            </label>
+                          </div>
+                        </fieldset>
+                      </div>
+                    </div>
+                    <div class="filter-divider"></div>
+                    <div class="spt-radius-container">
+                      <div class="form-group spt-filter-container">
+                        <label class="filter-item" for="DistanceRadius"
+                          >Number of pupils</label
+                        >
+                        <select
+                          id="DistanceRadius"
+                          name="radius"
+                          class="select radius-filter"
+                          v-model="filters.radius"
+                          v-on:change="filterMaybe"
+                        >
+                          <option selected value="1">Any</option>
+                          <option value="3">1 - 250</option>
+                          <option value="5">251 - 500</option>
+                          <option value="10">501 - 750</option>
+                          <option value="15">751 - 1,000</option>
+                          <option value="20">1,000 - 1,500</option>
+                          <option value="25">1,500+</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="filter-divider"></div>
+                    <div class="spt-filter-container">
+                      <div class="container-head">
+                        <div class="filter-item">
+                          <span tabindex="0">Pupil premium %</span>
+                        </div>
+                      </div>
+                      <div class="spt-filter-box" id="ofstedrating">
+                        <fieldset>
+                          <legend class="visuallyhidden">
+                            Select an option below to filter the results
+                          </legend>
+                          <div class="filter-wrapper">
+                            <input
+                              name="ofstedrating"
+                              value="1"
+                              id="Outstanding1"
+                              type="checkbox"
+                              v-model="filters.ofstedrating"
+                              class="filter-input"
+                              v-on:change="filterMaybe"
+                            />
+                            <label class="filter-checkbox" for="Outstanding1">
+                              10% or less
+                            </label>
+                          </div>
+                          <div class="filter-wrapper">
+                            <input
+                              name="ofstedrating"
+                              value="2"
+                              id="Good2"
+                              type="checkbox"
+                              v-model="filters.ofstedrating"
+                              class="filter-input"
+                              v-on:change="filterMaybe"
+                            />
+                            <label class="filter-checkbox" for="Good2">
+                              11% - 25%
+                            </label>
+                          </div>
+                          <div class="filter-wrapper">
+                            <input
+                              name="ofstedrating"
+                              value="3"
+                              id="Requiresimprovement3"
+                              type="checkbox"
+                              v-model="filters.ofstedrating"
+                              class="filter-input"
+                              v-on:change="filterMaybe"
+                            />
+                            <label
+                              class="filter-checkbox"
+                              for="Requiresimprovement3"
+                            >
+                              26% - 50%
+                            </label>
+                          </div>
+                          <div class="filter-wrapper">
+                            <input
+                              name="ofstedrating"
+                              value="4"
+                              id="Inadequate4"
+                              type="checkbox"
+                              v-model="filters.ofstedrating"
+                              class="filter-input"
+                              v-on:change="filterMaybe"
+                            />
+                            <label class="filter-checkbox" for="Inadequate4">
+                              More than 50%
+                            </label>
+                          </div>
+                        </fieldset>
+                      </div>
+                    </div>
+                    <div class="filter-divider"></div>
+                    <div class="spt-filter-container">
+                      <div class="container-head">
+                        <div class="filter-item">
+                          <span tabindex="0">Pupil premium allocation</span>
+                        </div>
+                        <div class="modal-filter school-type">
+                          <a
+                            href="#"
+                            class="js-modal help-info"
+                            data-help-modal="true"
+                            data-modal-title="Type of school or college"
+                            data-modal-text='&lt;p&gt;    &lt;ul class="modal-list"&gt;        &lt;li&gt;Academy - government funded but run by an academy trust rather than a local authority.&lt;/li&gt;        &lt;li&gt;College - colleges generally are focused on the 16 to 18 phase of education and provide vocational as well as academic courses. Some colleges also provide for full-time study at key stage 4.&lt;/li&gt;        &lt;li&gt;Independent school - privately funded.&lt;/li&gt;         &lt;li&gt;Maintained school - government funded and run by a local authority.&lt;/li&gt;        &lt;li&gt;Special school - schools that specialise in educating pupils with special educational needs.&lt;/li&gt;    &lt;/ul&gt;&lt;/p&gt;'
+                            data-modal-close-text="Close"
+                            data-modal-close-title="Close"
+                            data-help-text-key=""
+                          >
+                            <span class="visuallyhidden"
+                              >Open help text for Type of school or college
+                              opens a popup
+                            </span>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="spt-filter-box" id="schoolType">
+                        <fieldset>
+                          <legend class="visuallyhidden">
+                            Select an option below to filter the results
+                          </legend>
+                          <div class="filter-wrapper">
+                            <input
+                              name="schooltype"
+                              value="1"
+                              id="Academy1"
+                              type="checkbox"
+                              v-model="filters.schooltype"
+                              class="filter-input"
+                              v-on:change="filterMaybe"
+                            />
+                            <label class="filter-checkbox" for="Academy1">
+                              Less than £50,000
+                            </label>
+                          </div>
+                          <div class="filter-wrapper">
+                            <input
+                              name="schooltype"
+                              value="2"
+                              id="Maintainedschool2"
+                              type="checkbox"
+                              v-model="filters.schooltype"
+                              class="filter-input"
+                              v-on:change="filterMaybe"
+                            />
+                            <label
+                              class="filter-checkbox"
+                              for="Maintainedschool2"
+                            >
+                              £50,000 - £100,000
+                            </label>
+                          </div>
+                          <div class="filter-wrapper">
+                            <input
+                              name="schooltype"
+                              value="3"
+                              id="Independentschool3"
+                              type="checkbox"
+                              v-model="filters.schooltype"
+                              class="filter-input"
+                              v-on:change="filterMaybe"
+                            />
+                            <label
+                              class="filter-checkbox"
+                              for="Independentschool3"
+                            >
+                              £100,000 - £250,000
+                            </label>
+                          </div>
+                          <div class="filter-wrapper">
+                            <input
+                              name="schooltype"
+                              value="4"
+                              id="Specialschool4"
+                              type="checkbox"
+                              v-model="filters.schooltype"
+                              class="filter-input"
+                              v-on:change="filterMaybe"
+                            />
+                            <label class="filter-checkbox" for="Specialschool4">
+                              £250,000 - £500,000
+                            </label>
+                          </div>
+                          <div class="filter-wrapper">
+                            <input
+                              name="schooltype"
+                              value="5"
+                              id="College5"
+                              type="checkbox"
+                              v-model="filters.schooltype"
+                              class="filter-input"
+                              v-on:change="filterMaybe"
+                            />
+                            <label class="filter-checkbox" for="College5">
+                              More than £500,000
+                            </label>
+                          </div>
+                        </fieldset>
+                      </div>
+                    </div>
+                    <div class="filter-divider"></div>
+                    <div class="spt-filter-container">
+                      <div class="container-head">
+                        <div class="filter-item">
+                          <span tabindex="0">Type of challenge faced</span>
+                        </div>
+                        <div class="modal-filter religious-character">
+                          <a
+                            href="#"
+                            class="js-modal help-info"
+                            data-help-modal="true"
+                            data-modal-title="Religious character"
+                            data-modal-text='&lt;a href="https://www.gov.uk/types-of-school/faith-schools" target="_blank"&gt;Faith schools&lt;/a&gt; of all religious character must follow the national curriculum, but they can choose what they teach in religious studies. Faith schools may have different admissions criteria and staffing policies to state schools, and these can include religious character, but anyone can apply for a place. Faith academies don’t have to teach the national curriculum and have their own admissions processes.'
+                            data-modal-close-text="Close"
+                            data-modal-close-title="Close"
+                            data-help-text-key=""
+                          >
+                            <span class="visuallyhidden"
+                              >Open help text for Religious character opens a
+                              popup
+                            </span>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="spt-filter-box" id="faith">
+                        <fieldset>
+                          <legend class="visuallyhidden">
+                            Select an option below to filter the results
+                          </legend>
+                          <div class="filter-wrapper">
+                            <input
+                              name="faith"
+                              value="1"
+                              id="Anglican1"
+                              type="checkbox"
+                              v-model="filters.faith"
+                              class="filter-input"
+                              v-on:change="filterMaybe"
+                            />
+                            <label class="filter-checkbox" for="Anglican1">
+                              Custom
+                            </label>
+                          <div class="filter-wrapper">
+                            <input
+                              name="faith"
+                              value="1"
+                              id="Anglican1"
+                              type="checkbox"
+                              v-model="filters.faith"
+                              class="filter-input"
+                              v-on:change="filterMaybe"
+                            />
+                            <label class="filter-checkbox" for="Anglican1">
+                              Attendance
+                            </label>
+                          </div>
+                          <div class="filter-wrapper">
+                            <input
+                              name="faith"
+                              value="2"
+                              id="Catholic2"
+                              type="checkbox"
+                              v-model="filters.faith"
+                              class="filter-input"
+                              v-on:change="filterMaybe"
+                            />
+                            <label class="filter-checkbox" for="Catholic2">
+                              Maths attainment
+                            </label>
+                          </div>
+                          <div class="filter-wrapper">
+                            <input
+                              name="faith"
+                              value="3"
+                              id="Christian3"
+                              type="checkbox"
+                              v-model="filters.faith"
+                              class="filter-input"
+                              v-on:change="filterMaybe"
+                            />
+                            <label class="filter-checkbox" for="Christian3">
+                              Metacognition and self-regulation
+                            </label>
+                          </div>
+                          <div class="filter-wrapper">
+                            <input
+                              name="faith"
+                              value="4"
+                              id="ChurchofEngland4"
+                              type="checkbox"
+                              v-model="filters.faith"
+                              class="filter-input"
+                              v-on:change="filterMaybe"
+                            />
+                            <label
+                              class="filter-checkbox"
+                              for="ChurchofEngland4"
+                            >
+                              Reading comprehension
+                            </label>
+                          </div>
+                          <div class="filter-wrapper">
+                            <input
+                              name="faith"
+                              value="5"
+                              id="ChurchofEnglandMethodist5"
+                              type="checkbox"
+                              v-model="filters.faith"
+                              class="filter-input"
+                              v-on:change="filterMaybe"
+                            />
+                            <label
+                              class="filter-checkbox"
+                              for="ChurchofEnglandMethodist5"
+                            >
+                              School closures
+                            </label>
+                          </div>
+                          <div class="filter-wrapper">
+                            <input
+                              name="faith"
+                              value="6"
+                              id="ChurchofEnglandRomanCatholic6"
+                              type="checkbox"
+                              v-model="filters.faith"
+                              class="filter-input"
+                              v-on:change="filterMaybe"
+                            />
+                            <label
+                              class="filter-checkbox"
+                              for="ChurchofEnglandRomanCatholic6"
+                            >
+                              Social and emotional
+                            </label>
+                          </div>
+                        </fieldset>
+                      </div>
+                    </div>
+                    <div class="filter-divider"></div>
+                    <div class="spt-radius-container">
+                      <div class="form-group spt-filter-container">
+                        <label class="filter-item" for="DistanceRadius"
+                          >Improvement activities planned</label
+                        >
+                        <select
+                          id="DistanceRadius"
+                          name="radius"
+                          class="select radius-filter"
+                          v-model="filters.radius"
+                          v-on:change="filterMaybe"
+                        >
+                          <option selected value="1">Any</option>
+                          <option value="1">Custom</option>
+                          <option value="3">Arts participation</option>
+                          <option value="5">Behaviour interventions</option>
+                          <option value="10">Collaborative learning approaches</option>
+                          <option value="15">Extending school time</option>
+                          <option value="20">Feedback</option>
+                          <option value="25">Homework</option>
+                          <option>Metacognition and self-regulation</option>
+                          <option>One to one tuition</option>
+                          <option>Oral language interventions</option>
+                          <option>Parental engagement</option>
+                          <option>Peer tutoring</option>
+                          <option>Performance pay</option>
+                          <option>Phonics</option>
+                          <option>Physical activity</option>
+                          <option>Reading comprehension strategies</option>
+                          <option>Reducing class size</option>
+                          <option>Repeating a year</option>
+                          <option>Setting and streaming</option>
+                          <option>Small group tuition</option>
+                          <option>Social and emotional learning</option>
+                          <option>Summer schools</option>
+                          <option>Teaching assistant interventions</option>
+                          <option>Within class attainment grouping</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="filter-divider"></div>
+
+                    <input
+                      type="hidden"
+                      name="searchtype"
+                      value="search-by-location"
+                    />
+
+                    <input
+                      type="hidden"
+                      name="keywords"
+                      value="Leeds, West Yorkshire"
+                    />
+
+                    <input
+                      type="hidden"
+                      name="LocationCoordinates"
+                      value="53.79969,-1.5491"
+                    />
+
+                    <input
+                      type="hidden"
+                      name="selectionState"
+                      value="0,0,0,0"
+                    />
+                  </div>
+                  <div class="filter-button-container js-hidden">
+                    <input
+                      id="UpdateFilterParams"
+                      class="button js-live-search-fallback"
+                      type="submit"
+                      value="Apply filters"
+                    />
+                  </div>
+                  <a href="#result-listing" class="skiplink">Skip to results</a>
+                </div>
+                <div
+                  class="mobile-apply-button-container"
+                  v-show="!presentDesktopView && displayFilters"
+                >
+                  <input
+                    type="submit"
+                    value="View schools"
+                    class="button mobile-filter-button"
+                    v-on:click.prevent="getData(false)"
+                    v-show="!presentDesktopView"
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="govuk-grid-column-two-thirds-from-desktop">
+            <div class="grid-row pagination-container">
+              <span class="summary govuk-!-margin-bottom-3">
+                Showing 1 - 5 of
+                <span id="ResultCount" class="result-count">7,890</span> strategies
+              </span>
+            </div>
+
+            <ul class="school-result-listing" id="result-listing">
+              <li class="establishment-tile">
+                <h3
+                  class="heading-medium school-name-link govuk-!-margin-bottom-1"
+                >
+                  <a href="public-strategies-show.html" class="govuk-link--no-visited-state">Allerton Grange School</a>
+                </h3>
+                <div>
+                  Talbot Avenue, Leeds, LS17 6SF
+
+                  <table class="govuk-table govuk-!-margin-bottom-2">
+                    <tbody class="govuk-table__body govuk-!-font-size-16">
+                      <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">
+                          Last published strategy
+                        </th>
+                        <td class="govuk-table__cell">2021/22 - 2024/25</td>
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">
+                          Age range
+                        </th>
+                        <td class="govuk-table__cell">11 - 18</td>
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">
+                          Number of pupils
+                        </th>
+                        <td class="govuk-table__cell">1,315</td>
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">
+                          Pupil premium %
+                        </th>
+                        <td class="govuk-table__cell">34.3%</td>
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">
+                          Pupil premium allocation
+                        </th>
+                        <td class="govuk-table__cell">£430,705</td>
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">
+                          Attainment 8 for pupil premium students
+                        </th>
+                        <td class="govuk-table__cell">35.31%</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </li>
+              <li class="establishment-tile">
+                <h3
+                  class="heading-medium school-name-link govuk-!-margin-bottom-1"
+                >
+                  <a href="#" class="govuk-link--no-visited-state">Outwood Academy Portland</a>
+                </h3>
+                <div>
+                  Netherton Road, Worksop, S80 2SF
+
+                  <table class="govuk-table govuk-!-margin-bottom-2">
+                    <tbody class="govuk-table__body govuk-!-font-size-16">
+                      <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">
+                          Last published strategy
+                        </th>
+                        <td class="govuk-table__cell">2021/22 - 2024/25</td>
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">
+                          Age range
+                        </th>
+                        <td class="govuk-table__cell">11 - 18</td>
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">
+                          Number of pupils
+                        </th>
+                        <td class="govuk-table__cell">1,308</td>
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">
+                          Pupil premium %
+                        </th>
+                        <td class="govuk-table__cell">28.1%</td>
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">
+                          Pupil premium allocation
+                        </th>
+                        <td class="govuk-table__cell">£350,485</td>
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">
+                          Attainment 8 for pupil premium students
+                        </th>
+                        <td class="govuk-table__cell">45.85%</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </li>
+              <li class="establishment-tile">
+                <h3
+                  class="heading-medium school-name-link govuk-!-margin-bottom-1"
+                >
+                  <a href="#" class="govuk-link--no-visited-state">Lincoln Christ's Hospital School</a>
+                </h3>
+                <div>
+                  Wragby Road, Lincoln, LN2 4PN
+
+                  <table class="govuk-table govuk-!-margin-bottom-2">
+                    <tbody class="govuk-table__body govuk-!-font-size-16">
+                      <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">
+                          Last published strategy
+                        </th>
+                        <td class="govuk-table__cell">2021/22 - 2024/25</td>
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">
+                          Age range
+                        </th>
+                        <td class="govuk-table__cell">11 - 18</td>
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">
+                          Number of pupils
+                        </th>
+                        <td class="govuk-table__cell">1,013</td>
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">
+                          Pupil premium %
+                        </th>
+                        <td class="govuk-table__cell">35.0%</td>
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">
+                          Pupil premium allocation
+                        </th>
+                        <td class="govuk-table__cell">£339,025</td>
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">
+                          Attainment 8 for pupil premium students
+                        </th>
+                        <td class="govuk-table__cell">35.19%</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </li>
+              <li class="establishment-tile">
+                <h3
+                  class="heading-medium school-name-link govuk-!-margin-bottom-1"
+                >
+                  <a href="#" class="govuk-link--no-visited-state">Lincoln Christ's Hospital School</a>
+                </h3>
+                <div>
+                  Wragby Road, Lincoln, LN2 4PN
+
+                  <table class="govuk-table govuk-!-margin-bottom-2">
+                    <tbody class="govuk-table__body govuk-!-font-size-16">
+                      <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">
+                          Last published strategy
+                        </th>
+                        <td class="govuk-table__cell">2021/22 - 2024/25</td>
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">
+                          Age range
+                        </th>
+                        <td class="govuk-table__cell">11 - 18</td>
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">
+                          Number of pupils
+                        </th>
+                        <td class="govuk-table__cell">1,013</td>
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">
+                          Pupil premium %
+                        </th>
+                        <td class="govuk-table__cell">35.0%</td>
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">
+                          Pupil premium allocation
+                        </th>
+                        <td class="govuk-table__cell">£339,025</td>
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">
+                          Attainment 8 for pupil premium students
+                        </th>
+                        <td class="govuk-table__cell">35.19%</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </li>
+              <li class="establishment-tile">
+                <h3
+                  class="heading-medium school-name-link govuk-!-margin-bottom-1"
+                >
+                  <a href="#" class="govuk-link--no-visited-state">Hall Cross Academy</a>
+                </h3>
+                <div>
+                  Thorne Road, Doncaster, DN1 2HY
+
+                  <table class="govuk-table govuk-!-margin-bottom-2">
+                    <tbody class="govuk-table__body govuk-!-font-size-16">
+                      <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">
+                          Last published strategy
+                        </th>
+                        <td class="govuk-table__cell">2021/22 - 2024/25</td>
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">
+                          Age range
+                        </th>
+                        <td class="govuk-table__cell">11 - 18</td>
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">
+                          Number of pupils
+                        </th>
+                        <td class="govuk-table__cell">1,392</td>
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">
+                          Pupil premium %
+                        </th>
+                        <td class="govuk-table__cell">36.7%</td>
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">
+                          Pupil premium allocation
+                        </th>
+                        <td class="govuk-table__cell">£354,305</td>
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">
+                          Attainment 8 for pupil premium students
+                        </th>
+                        <td class="govuk-table__cell">36.25%</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </li>
+            </ul>
+
+            <p class="govuk-small govuk-!-text-align-right govuk-!-margin-top-2">
+              <a href="#" class="govuk-link govuk-link--no-visited-state">Next page</a>
+            </p>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <footer class="govuk-footer" role="contentinfo">
+      <div class="govuk-width-container">
+        <div class="govuk-footer__meta">
+          <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+            <h2 class="govuk-visually-hidden">Support links</h2>
+            <ul class="govuk-footer__inline-list">
+              <li class="govuk-footer__inline-list-item">
+                <a class="govuk-footer__link" href="#1"> Help </a>
+              </li>
+              <li class="govuk-footer__inline-list-item">
+                <a class="govuk-footer__link" href="#2"> Cookies </a>
+              </li>
+              <li class="govuk-footer__inline-list-item">
+                <a class="govuk-footer__link" href="#3"> Contact </a>
+              </li>
+              <li class="govuk-footer__inline-list-item">
+                <a class="govuk-footer__link" href="#4">
+                  Terms and conditions
+                </a>
+              </li>
+            </ul>
+
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              class="govuk-footer__licence-logo"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 483.2 195.7"
+              height="17"
+              width="41"
+            >
+              <path
+                fill="currentColor"
+                d="M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145"
+              />
+            </svg>
+            <span class="govuk-footer__licence-description">
+              All content is available under the
+              <a
+                class="govuk-footer__link"
+                href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+                rel="license"
+                >Open Government Licence v3.0</a
+              >, except where otherwise stated
+            </span>
+          </div>
+          <div class="govuk-footer__meta-item">
+            <a
+              class="govuk-footer__link govuk-footer__copyright-logo"
+              href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/"
+              >© Crown copyright</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./javascript/govuk-frontend-4.2.0.min.js"></script>
+    <script>
+      window.GOVUKFrontend.initAll();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,1920 @@
+<!DOCTYPE html>
+<html lang="en" class="govuk-template app-html-class">
+  <head>
+    <meta charset="utf-8" />
+    <title>Activities - Pupil Premium Reporting</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="blue" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link
+      rel="shortcut icon"
+      sizes="16x16 32x32 48x48"
+      href="./assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="mask-icon"
+      href="./assets/images/govuk-mask-icon.svg"
+      color="blue"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/images/govuk-apple-touch-icon-180x180.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="167x167"
+      href="./assets/images/govuk-apple-touch-icon-167x167.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./assets/images/govuk-apple-touch-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="./assets/images/govuk-apple-touch-icon.png"
+    />
+
+    <link rel="stylesheet" href="./stylesheets/govuk-frontend-4.2.0.min.css" />
+    <link rel="stylesheet" href="./stylesheets/custom.css" />
+  </head>
+
+  <body
+    class="govuk-template__body app-body-class"
+    data-test="My value"
+    data-other="report:details"
+  >
+    <script>
+      document.body.className = document.body.className
+        ? document.body.className + " js-enabled"
+        : "js-enabled";
+    </script>
+    <!-- <div
+      class="govuk-cookie-banner"
+      data-nosnippet
+      role="region"
+      aria-label="Cookies on [name of service]"
+    >
+      <div class="govuk-cookie-banner__message govuk-width-container">
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-two-thirds">
+            <h2 class="govuk-cookie-banner__heading govuk-heading-m">
+              Cookies on [name of service]
+            </h2>
+
+            <div class="govuk-cookie-banner__content">
+              <p class="govuk-body">
+                We use some essential cookies to make this service work.
+              </p>
+              <p class="govuk-body">
+                We'd also like to use analytics cookies so we can understand how
+                you use the service and make improvements.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="govuk-button-group">
+          <button
+            value="accept"
+            type="button"
+            name="cookies"
+            class="govuk-button"
+            data-module="govuk-button"
+          >
+            Accept analytics cookies
+          </button>
+          <button
+            value="reject"
+            type="button"
+            name="cookies"
+            class="govuk-button"
+            data-module="govuk-button"
+          >
+            Reject analytics cookies
+          </button>
+          <a class="govuk-link govuk-link--no-visited-state" href="#">View cookies</a>
+        </div>
+      </div>
+    </div> -->
+
+    <a
+      href="#main-content"
+      class="govuk-skip-link"
+      data-module="govuk-skip-link"
+      >Skip to main content</a
+    >
+
+    <header class="govuk-header" role="banner" data-module="govuk-header">
+      <div class="govuk-header__container govuk-width-container">
+        <div class="govuk-header__logo">
+          <a href="#" class="govuk-header__link govuk-header__link--homepage">
+            <span class="govuk-header__logotype">
+              <!--[if gt IE 8]><!-->
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                class="govuk-header__logotype-crown"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 132 97"
+                height="30"
+                width="36"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M25 30.2c3.5 1.5 7.7-.2 9.1-3.7 1.5-3.6-.2-7.8-3.9-9.2-3.6-1.4-7.6.3-9.1 3.9-1.4 3.5.3 7.5 3.9 9zM9 39.5c3.6 1.5 7.8-.2 9.2-3.7 1.5-3.6-.2-7.8-3.9-9.1-3.6-1.5-7.6.2-9.1 3.8-1.4 3.5.3 7.5 3.8 9zM4.4 57.2c3.5 1.5 7.7-.2 9.1-3.8 1.5-3.6-.2-7.7-3.9-9.1-3.5-1.5-7.6.3-9.1 3.8-1.4 3.5.3 7.6 3.9 9.1zm38.3-21.4c3.5 1.5 7.7-.2 9.1-3.8 1.5-3.6-.2-7.7-3.9-9.1-3.6-1.5-7.6.3-9.1 3.8-1.3 3.6.4 7.7 3.9 9.1zm64.4-5.6c-3.6 1.5-7.8-.2-9.1-3.7-1.5-3.6.2-7.8 3.8-9.2 3.6-1.4 7.7.3 9.2 3.9 1.3 3.5-.4 7.5-3.9 9zm15.9 9.3c-3.6 1.5-7.7-.2-9.1-3.7-1.5-3.6.2-7.8 3.7-9.1 3.6-1.5 7.7.2 9.2 3.8 1.5 3.5-.3 7.5-3.8 9zm4.7 17.7c-3.6 1.5-7.8-.2-9.2-3.8-1.5-3.6.2-7.7 3.9-9.1 3.6-1.5 7.7.3 9.2 3.8 1.3 3.5-.4 7.6-3.9 9.1zM89.3 35.8c-3.6 1.5-7.8-.2-9.2-3.8-1.4-3.6.2-7.7 3.9-9.1 3.6-1.5 7.7.3 9.2 3.8 1.4 3.6-.3 7.7-3.9 9.1zM69.7 17.7l8.9 4.7V9.3l-8.9 2.8c-.2-.3-.5-.6-.9-.9L72.4 0H59.6l3.5 11.2c-.3.3-.6.5-.9.9l-8.8-2.8v13.1l8.8-4.7c.3.3.6.7.9.9l-5 15.4v.1c-.2.8-.4 1.6-.4 2.4 0 4.1 3.1 7.5 7 8.1h.2c.3 0 .7.1 1 .1.4 0 .7 0 1-.1h.2c4-.6 7.1-4.1 7.1-8.1 0-.8-.1-1.7-.4-2.4V34l-5.1-15.4c.4-.2.7-.6 1-.9zM66 92.8c16.9 0 32.8 1.1 47.1 3.2 4-16.9 8.9-26.7 14-33.5l-9.6-3.4c1 4.9 1.1 7.2 0 10.2-1.5-1.4-3-4.3-4.2-8.7L108.6 76c2.8-2 5-3.2 7.5-3.3-4.4 9.4-10 11.9-13.6 11.2-4.3-.8-6.3-4.6-5.6-7.9 1-4.7 5.7-5.9 8-.5 4.3-8.7-3-11.4-7.6-8.8 7.1-7.2 7.9-13.5 2.1-21.1-8 6.1-8.1 12.3-4.5 20.8-4.7-5.4-12.1-2.5-9.5 6.2 3.4-5.2 7.9-2 7.2 3.1-.6 4.3-6.4 7.8-13.5 7.2-10.3-.9-10.9-8-11.2-13.8 2.5-.5 7.1 1.8 11 7.3L80.2 60c-4.1 4.4-8 5.3-12.3 5.4 1.4-4.4 8-11.6 8-11.6H55.5s6.4 7.2 7.9 11.6c-4.2-.1-8-1-12.3-5.4l1.4 16.4c3.9-5.5 8.5-7.7 10.9-7.3-.3 5.8-.9 12.8-11.1 13.8-7.2.6-12.9-2.9-13.5-7.2-.7-5 3.8-8.3 7.1-3.1 2.7-8.7-4.6-11.6-9.4-6.2 3.7-8.5 3.6-14.7-4.6-20.8-5.8 7.6-5 13.9 2.2 21.1-4.7-2.6-11.9.1-7.7 8.8 2.3-5.5 7.1-4.2 8.1.5.7 3.3-1.3 7.1-5.7 7.9-3.5.7-9-1.8-13.5-11.2 2.5.1 4.7 1.3 7.5 3.3l-4.7-15.4c-1.2 4.4-2.7 7.2-4.3 8.7-1.1-3-.9-5.3 0-10.2l-9.5 3.4c5 6.9 9.9 16.7 14 33.5 14.8-2.1 30.8-3.2 47.7-3.2z"
+                ></path>
+              </svg>
+              <!--<![endif]-->
+              <!--[if IE 8]>
+                <img
+                  src="./assets/images/govuk-logotype-crown.png"
+                  class="govuk-header__logotype-crown-fallback-image"
+                  width="36"
+                  height="32"
+                />
+              <![endif]-->
+              <span class="govuk-header__logotype-text"> GOV.UK </span>
+            </span>
+          </a>
+        </div>
+        <div class="govuk-header__content">
+          <a href="#" class="govuk-header__link govuk-header__service-name">
+            Pupil Premium Reporting
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <div class="govuk-width-container app-width-container">
+      <div class="govuk-phase-banner">
+        <p class="govuk-phase-banner__content">
+          <strong class="govuk-tag govuk-phase-banner__content__tag">
+            concept
+          </strong>
+          <span class="govuk-phase-banner__text">
+            This is a concept service, it does not work. See a
+            <a href="index.html" class="govuk-link govuk-link--no-visited-state"
+              >list of all views</a
+            >.
+          </span>
+        </p>
+      </div>
+
+      <div class="govuk-breadcrumbs">
+        <ol class="govuk-breadcrumbs__list">
+          <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link" href="index.html">Home</a>
+          </li>
+          <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link" href="strategies-show.html"
+              >Your strategy</a
+            >
+          </li>
+          <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link" href="#"
+              >Activity this academic year</a
+            >
+          </li>
+        </ol>
+      </div>
+
+      <!-- <a href="index.html" class="govuk-back-link">Back</a> -->
+
+      <main class="govuk-main-wrapper" id="main-content" role="main">
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-full govuk-!-margin-bottom-4">
+            <span class="govuk-caption-l">Allerton Grange School</span>
+            <h1 class="govuk-heading-l">
+              Pupil premium strategy for 2021/22 - 2024/25
+            </h1>
+
+            <hr
+              class="govuk-section-break govuk-section-break--l govuk-section-break--visible"
+            />
+          </div>
+        </div>
+
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-full">
+            <fieldset class="govuk-fieldset">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                <h1 class="govuk-fieldset__heading">
+                  Activity this academic year
+                </h1>
+                <div class="govuk-hint">
+                  How we intend to spend our pupil premium (and recovery premium
+                  funding) this academic year to address the challenges we have
+                  identified.
+                </div>
+              </legend>
+            </fieldset>
+
+            <section class="activity-container govuk-!-margin-bottom-6">
+              <h3 class="govuk-heading-m">Challenge: Maths attainment</h3>
+
+              <p class="govuk-body">
+                The maths attainment of disadvantaged pupils is generally lower
+                than that of their peers and teacher diagnostic assessments
+                suggest that many pupils particularly struggle with problem
+                solving tasks.
+              </p>
+              <p class="govuk-body">
+                Assessments on entry to year 7 in the last X years indicate that
+                between X - Y% of our disadvantaged pupils arrive below
+                age-related expectations compared to X - Y% of their peers.
+                Subsequent internal and external (where available) assessments
+                show that this gap widens by around X% during pupils' time at
+                our school.
+              </p>
+
+              <h2 class="govuk-heading-m">
+                Activites we're undertaking this year
+              </h2>
+
+              <table class="govuk-table">
+                <thead class="govuk-table__head">
+                  <tr class="govuk-table__row">
+                    <th scope="col" class="govuk-table__header">Category</th>
+                    <th scope="col" class="govuk-table__header">
+                      What we plan to do
+                    </th>
+                    <th scope="col" class="govuk-table__header">Budgeted</th>
+                    <th scope="col" class="govuk-table__header"></th>
+                  </tr>
+                </thead>
+                <tbody class="govuk-table__body">
+                  <tr class="govuk-table__row">
+                    <th scope="row" class="govuk-table__header">
+                      <strong>Feedback</strong>
+                      <div class="evidence">
+                        <div class="evidence-row">
+                          <strong>Cost</strong>
+                          <div class="icons">
+                            <svg
+                              width="21"
+                              height="21"
+                              stroke-width="1.5"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M10.6667 13.6C9.55558 16.2666 7.88891 18.9333 5.66669 20H16.2222C16.2222 20 17.8889 20 19 18.9333"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M15.1111 13.6H4"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M17.3333 8.8C17.3333 6.14903 15.0947 4 12.3333 4C9.57189 4 7.33331 6.14903 7.33331 8.8C7.33331 11.451 9.57189 13.6 12.3333 13.6"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                            <span class="icons-faded">
+                              <svg
+                                width="21"
+                                height="21"
+                                stroke-width="1.5"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M10.6667 13.6C9.55558 16.2666 7.88891 18.9333 5.66669 20H16.2222C16.2222 20 17.8889 20 19 18.9333"
+                                  stroke="currentColor"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M15.1111 13.6H4"
+                                  stroke="currentColor"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M17.3333 8.8C17.3333 6.14903 15.0947 4 12.3333 4C9.57189 4 7.33331 6.14903 7.33331 8.8C7.33331 11.451 9.57189 13.6 12.3333 13.6"
+                                  stroke="currentColor"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                              </svg>
+                              <svg
+                                width="21"
+                                height="21"
+                                stroke-width="1.5"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M10.6667 13.6C9.55558 16.2666 7.88891 18.9333 5.66669 20H16.2222C16.2222 20 17.8889 20 19 18.9333"
+                                  stroke="currentColor"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M15.1111 13.6H4"
+                                  stroke="currentColor"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M17.3333 8.8C17.3333 6.14903 15.0947 4 12.3333 4C9.57189 4 7.33331 6.14903 7.33331 8.8C7.33331 11.451 9.57189 13.6 12.3333 13.6"
+                                  stroke="currentColor"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                              </svg>
+                              <svg
+                                width="21"
+                                height="21"
+                                stroke-width="1.5"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M10.6667 13.6C9.55558 16.2666 7.88891 18.9333 5.66669 20H16.2222C16.2222 20 17.8889 20 19 18.9333"
+                                  stroke="currentColor"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M15.1111 13.6H4"
+                                  stroke="currentColor"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M17.3333 8.8C17.3333 6.14903 15.0947 4 12.3333 4C9.57189 4 7.33331 6.14903 7.33331 8.8C7.33331 11.451 9.57189 13.6 12.3333 13.6"
+                                  stroke="currentColor"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                              </svg>
+                              <svg
+                                width="21"
+                                height="21"
+                                stroke-width="1.5"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M10.6667 13.6C9.55558 16.2666 7.88891 18.9333 5.66669 20H16.2222C16.2222 20 17.8889 20 19 18.9333"
+                                  stroke="currentColor"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M15.1111 13.6H4"
+                                  stroke="currentColor"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M17.3333 8.8C17.3333 6.14903 15.0947 4 12.3333 4C9.57189 4 7.33331 6.14903 7.33331 8.8C7.33331 11.451 9.57189 13.6 12.3333 13.6"
+                                  stroke="currentColor"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                              </svg>
+                            </span>
+                          </div>
+                        </div>
+
+                        <div class="evidence-row">
+                          <strong>Evidence</strong>
+                          <div>
+                            <svg
+                              width="21"
+                              height="21"
+                              stroke-width="1.5"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M8.58737 8.23597L11.1849 3.00376C11.5183 2.33208 12.4817 2.33208 12.8151 3.00376L15.4126 8.23597L21.2215 9.08017C21.9668 9.18848 22.2638 10.0994 21.7243 10.6219L17.5217 14.6918L18.5135 20.4414C18.6409 21.1798 17.8614 21.7428 17.1945 21.3941L12 18.678L6.80547 21.3941C6.1386 21.7428 5.35909 21.1798 5.48645 20.4414L6.47825 14.6918L2.27575 10.6219C1.73617 10.0994 2.03322 9.18848 2.77852 9.08017L8.58737 8.23597Z"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                            <svg
+                              width="21"
+                              height="21"
+                              stroke-width="1.5"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M8.58737 8.23597L11.1849 3.00376C11.5183 2.33208 12.4817 2.33208 12.8151 3.00376L15.4126 8.23597L21.2215 9.08017C21.9668 9.18848 22.2638 10.0994 21.7243 10.6219L17.5217 14.6918L18.5135 20.4414C18.6409 21.1798 17.8614 21.7428 17.1945 21.3941L12 18.678L6.80547 21.3941C6.1386 21.7428 5.35909 21.1798 5.48645 20.4414L6.47825 14.6918L2.27575 10.6219C1.73617 10.0994 2.03322 9.18848 2.77852 9.08017L8.58737 8.23597Z"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                            <svg
+                              width="21"
+                              height="21"
+                              stroke-width="1.5"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M8.58737 8.23597L11.1849 3.00376C11.5183 2.33208 12.4817 2.33208 12.8151 3.00376L15.4126 8.23597L21.2215 9.08017C21.9668 9.18848 22.2638 10.0994 21.7243 10.6219L17.5217 14.6918L18.5135 20.4414C18.6409 21.1798 17.8614 21.7428 17.1945 21.3941L12 18.678L6.80547 21.3941C6.1386 21.7428 5.35909 21.1798 5.48645 20.4414L6.47825 14.6918L2.27575 10.6219C1.73617 10.0994 2.03322 9.18848 2.77852 9.08017L8.58737 8.23597Z"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                            <svg
+                              width="21"
+                              height="21"
+                              stroke-width="1.5"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M8.58737 8.23597L11.1849 3.00376C11.5183 2.33208 12.4817 2.33208 12.8151 3.00376L15.4126 8.23597L21.2215 9.08017C21.9668 9.18848 22.2638 10.0994 21.7243 10.6219L17.5217 14.6918L18.5135 20.4414C18.6409 21.1798 17.8614 21.7428 17.1945 21.3941L12 18.678L6.80547 21.3941C6.1386 21.7428 5.35909 21.1798 5.48645 20.4414L6.47825 14.6918L2.27575 10.6219C1.73617 10.0994 2.03322 9.18848 2.77852 9.08017L8.58737 8.23597Z"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+
+                            <span class="icons-faded">
+                              <svg
+                                width="21"
+                                height="21"
+                                stroke-width="1.5"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M8.58737 8.23597L11.1849 3.00376C11.5183 2.33208 12.4817 2.33208 12.8151 3.00376L15.4126 8.23597L21.2215 9.08017C21.9668 9.18848 22.2638 10.0994 21.7243 10.6219L17.5217 14.6918L18.5135 20.4414C18.6409 21.1798 17.8614 21.7428 17.1945 21.3941L12 18.678L6.80547 21.3941C6.1386 21.7428 5.35909 21.1798 5.48645 20.4414L6.47825 14.6918L2.27575 10.6219C1.73617 10.0994 2.03322 9.18848 2.77852 9.08017L8.58737 8.23597Z"
+                                  stroke="currentColor"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                              </svg>
+                            </span>
+                          </div>
+                        </div>
+
+                        <a
+                          href="https://educationendowmentfoundation.org.uk/education-evidence/teaching-learning-toolkit/feedback"
+                          class="govuk-link govuk-link--no-visited-state"
+                          rel="noreferrer noopener"
+                          target="_blank"
+                          >Source (opens in new tab)</a
+                        >
+                      </div>
+                    </th>
+                    <td class="govuk-table__cell">
+                      <p class="govuk-body">
+                        Purchase of standardised diagnostic assessments.
+                        Training will be provided for staff to ensure
+                        assessments are interpreted and correctly used to give
+                        feedback to pupils.
+                      </p>
+                    </td>
+                    <td class="govuk-table__cell">£1,234</td>
+                    <td class="govuk-table__cell">
+                      <a
+                        class="govuk-link govuk-link--no-visited-state"
+                        href="#"
+                      >
+                        Edit
+                      </a>
+                      <a
+                        class="govuk-link govuk-link--no-visited-state"
+                        href="#"
+                      >
+                        Delete
+                      </a>
+                    </td>
+                  </tr>
+                  <tr class="govuk-table__row">
+                    <th scope="row" class="govuk-table__header">
+                      <strong>Mastery learning</strong>
+                      <div class="evidence">
+                        <div class="evidence-row">
+                          <strong>Cost</strong>
+                          <div class="icons">
+                            <svg
+                              width="21"
+                              height="21"
+                              stroke-width="1.5"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M10.6667 13.6C9.55558 16.2666 7.88891 18.9333 5.66669 20H16.2222C16.2222 20 17.8889 20 19 18.9333"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M15.1111 13.6H4"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M17.3333 8.8C17.3333 6.14903 15.0947 4 12.3333 4C9.57189 4 7.33331 6.14903 7.33331 8.8C7.33331 11.451 9.57189 13.6 12.3333 13.6"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                            <span class="icons-faded">
+                              <svg
+                                width="21"
+                                height="21"
+                                stroke-width="1.5"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M10.6667 13.6C9.55558 16.2666 7.88891 18.9333 5.66669 20H16.2222C16.2222 20 17.8889 20 19 18.9333"
+                                  stroke="currentColor"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M15.1111 13.6H4"
+                                  stroke="currentColor"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M17.3333 8.8C17.3333 6.14903 15.0947 4 12.3333 4C9.57189 4 7.33331 6.14903 7.33331 8.8C7.33331 11.451 9.57189 13.6 12.3333 13.6"
+                                  stroke="currentColor"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                              </svg>
+                              <svg
+                                width="21"
+                                height="21"
+                                stroke-width="1.5"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M10.6667 13.6C9.55558 16.2666 7.88891 18.9333 5.66669 20H16.2222C16.2222 20 17.8889 20 19 18.9333"
+                                  stroke="currentColor"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M15.1111 13.6H4"
+                                  stroke="currentColor"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M17.3333 8.8C17.3333 6.14903 15.0947 4 12.3333 4C9.57189 4 7.33331 6.14903 7.33331 8.8C7.33331 11.451 9.57189 13.6 12.3333 13.6"
+                                  stroke="currentColor"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                              </svg>
+                              <svg
+                                width="21"
+                                height="21"
+                                stroke-width="1.5"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M10.6667 13.6C9.55558 16.2666 7.88891 18.9333 5.66669 20H16.2222C16.2222 20 17.8889 20 19 18.9333"
+                                  stroke="currentColor"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M15.1111 13.6H4"
+                                  stroke="currentColor"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M17.3333 8.8C17.3333 6.14903 15.0947 4 12.3333 4C9.57189 4 7.33331 6.14903 7.33331 8.8C7.33331 11.451 9.57189 13.6 12.3333 13.6"
+                                  stroke="currentColor"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                              </svg>
+                              <svg
+                                width="21"
+                                height="21"
+                                stroke-width="1.5"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M10.6667 13.6C9.55558 16.2666 7.88891 18.9333 5.66669 20H16.2222C16.2222 20 17.8889 20 19 18.9333"
+                                  stroke="currentColor"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M15.1111 13.6H4"
+                                  stroke="currentColor"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M17.3333 8.8C17.3333 6.14903 15.0947 4 12.3333 4C9.57189 4 7.33331 6.14903 7.33331 8.8C7.33331 11.451 9.57189 13.6 12.3333 13.6"
+                                  stroke="currentColor"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                              </svg>
+                            </span>
+                          </div>
+                        </div>
+
+                        <div class="evidence-row">
+                          <strong>Evidence</strong>
+                          <div>
+                            <svg
+                              width="21"
+                              height="21"
+                              stroke-width="1.5"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M8.58737 8.23597L11.1849 3.00376C11.5183 2.33208 12.4817 2.33208 12.8151 3.00376L15.4126 8.23597L21.2215 9.08017C21.9668 9.18848 22.2638 10.0994 21.7243 10.6219L17.5217 14.6918L18.5135 20.4414C18.6409 21.1798 17.8614 21.7428 17.1945 21.3941L12 18.678L6.80547 21.3941C6.1386 21.7428 5.35909 21.1798 5.48645 20.4414L6.47825 14.6918L2.27575 10.6219C1.73617 10.0994 2.03322 9.18848 2.77852 9.08017L8.58737 8.23597Z"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                            <svg
+                              width="21"
+                              height="21"
+                              stroke-width="1.5"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M8.58737 8.23597L11.1849 3.00376C11.5183 2.33208 12.4817 2.33208 12.8151 3.00376L15.4126 8.23597L21.2215 9.08017C21.9668 9.18848 22.2638 10.0994 21.7243 10.6219L17.5217 14.6918L18.5135 20.4414C18.6409 21.1798 17.8614 21.7428 17.1945 21.3941L12 18.678L6.80547 21.3941C6.1386 21.7428 5.35909 21.1798 5.48645 20.4414L6.47825 14.6918L2.27575 10.6219C1.73617 10.0994 2.03322 9.18848 2.77852 9.08017L8.58737 8.23597Z"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                            <span class="icons-faded">
+                              <svg
+                                width="21"
+                                height="21"
+                                stroke-width="1.5"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M8.58737 8.23597L11.1849 3.00376C11.5183 2.33208 12.4817 2.33208 12.8151 3.00376L15.4126 8.23597L21.2215 9.08017C21.9668 9.18848 22.2638 10.0994 21.7243 10.6219L17.5217 14.6918L18.5135 20.4414C18.6409 21.1798 17.8614 21.7428 17.1945 21.3941L12 18.678L6.80547 21.3941C6.1386 21.7428 5.35909 21.1798 5.48645 20.4414L6.47825 14.6918L2.27575 10.6219C1.73617 10.0994 2.03322 9.18848 2.77852 9.08017L8.58737 8.23597Z"
+                                  stroke="currentColor"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                              </svg>
+                              <svg
+                                width="21"
+                                height="21"
+                                stroke-width="1.5"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M8.58737 8.23597L11.1849 3.00376C11.5183 2.33208 12.4817 2.33208 12.8151 3.00376L15.4126 8.23597L21.2215 9.08017C21.9668 9.18848 22.2638 10.0994 21.7243 10.6219L17.5217 14.6918L18.5135 20.4414C18.6409 21.1798 17.8614 21.7428 17.1945 21.3941L12 18.678L6.80547 21.3941C6.1386 21.7428 5.35909 21.1798 5.48645 20.4414L6.47825 14.6918L2.27575 10.6219C1.73617 10.0994 2.03322 9.18848 2.77852 9.08017L8.58737 8.23597Z"
+                                  stroke="currentColor"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                              </svg>
+                              <svg
+                                width="21"
+                                height="21"
+                                stroke-width="1.5"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M8.58737 8.23597L11.1849 3.00376C11.5183 2.33208 12.4817 2.33208 12.8151 3.00376L15.4126 8.23597L21.2215 9.08017C21.9668 9.18848 22.2638 10.0994 21.7243 10.6219L17.5217 14.6918L18.5135 20.4414C18.6409 21.1798 17.8614 21.7428 17.1945 21.3941L12 18.678L6.80547 21.3941C6.1386 21.7428 5.35909 21.1798 5.48645 20.4414L6.47825 14.6918L2.27575 10.6219C1.73617 10.0994 2.03322 9.18848 2.77852 9.08017L8.58737 8.23597Z"
+                                  stroke="currentColor"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                              </svg>
+                            </span>
+                          </div>
+                        </div>
+
+                        <a
+                          href="https://educationendowmentfoundation.org.uk/education-evidence/teaching-learning-toolkit/mastery-learning"
+                          class="govuk-link govuk-link--no-visited-state"
+                          rel="noreferrer noopener"
+                          target="_blank"
+                          >Source (opens in new tab)</a
+                        >
+                      </div>
+                    </th>
+                    <td class="govuk-table__cell">
+                      <p class="govuk-body">
+                        We will fund teacher release time to embed key elements
+                        of the guidance in school, and to access Maths Hub
+                        resources and CPD offers (including Teaching for Mastery
+                        training).
+                      </p>
+                    </td>
+                    <td class="govuk-table__cell">£1,234</td>
+                    <td class="govuk-table__cell">
+                      <a
+                        class="govuk-link govuk-link--no-visited-state"
+                        href="#"
+                      >
+                        Edit
+                      </a>
+                      <a
+                        class="govuk-link govuk-link--no-visited-state"
+                        href="#"
+                      >
+                        Delete
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <p class="govuk-body">
+                <a
+                  href="activites-new.html"
+                  class="govuk-link govuk-link--no-visited-state"
+                  >Add activity</a
+                >
+              </p>
+
+              <h2 class="govuk-heading-m">Total budgeted</h2>
+              <p class="govuk-body">£2,468</p>
+            </section>
+
+            <section class="activity-container govuk-!-margin-bottom-6">
+              <h3 class="govuk-heading-m">Challenge: Reading comprehension</h3>
+
+              <p class="govuk-body">
+                Assessments, observations and discussion with KS3 pupils
+                indicate that disadvantaged pupils generally have lower levels
+                of reading comprehension than peers. This impacts their progress
+                in all subjects.
+              </p>
+              <p class="govuk-body">
+                On entry to year 7 in the last X years, between X - Y% of our
+                disadvantaged pupils arrive below age-related expectations
+                compared to X - Y% of their peers. This gap remains steady
+                during pupils' time at our school.
+              </p>
+
+              <h2 class="govuk-heading-m">
+                Activites we're undertaking this year
+              </h2>
+
+              <table class="govuk-table">
+                <thead class="govuk-table__head">
+                  <tr class="govuk-table__row">
+                    <th scope="col" class="govuk-table__header">Category</th>
+                    <th scope="col" class="govuk-table__header">
+                      What we plan to do
+                    </th>
+                    <th scope="col" class="govuk-table__header">Budgeted</th>
+                    <th scope="col" class="govuk-table__header"></th>
+                  </tr>
+                </thead>
+                <tbody class="govuk-table__body">
+                  <tr class="govuk-table__row">
+                    <th scope="row" class="govuk-table__header">
+                      <strong>Reading comprehension strategies</strong>
+                      <div class="evidence">
+                        <div class="evidence-row">
+                          <strong>Cost</strong>
+                          <div class="icons">
+                            <svg
+                              width="21"
+                              height="21"
+                              stroke-width="1.5"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M10.6667 13.6C9.55558 16.2666 7.88891 18.9333 5.66669 20H16.2222C16.2222 20 17.8889 20 19 18.9333"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M15.1111 13.6H4"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M17.3333 8.8C17.3333 6.14903 15.0947 4 12.3333 4C9.57189 4 7.33331 6.14903 7.33331 8.8C7.33331 11.451 9.57189 13.6 12.3333 13.6"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                            <span class="icons-faded">
+                              <svg
+                                width="21"
+                                height="21"
+                                stroke-width="1.5"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M10.6667 13.6C9.55558 16.2666 7.88891 18.9333 5.66669 20H16.2222C16.2222 20 17.8889 20 19 18.9333"
+                                  stroke="currentColor"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M15.1111 13.6H4"
+                                  stroke="currentColor"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M17.3333 8.8C17.3333 6.14903 15.0947 4 12.3333 4C9.57189 4 7.33331 6.14903 7.33331 8.8C7.33331 11.451 9.57189 13.6 12.3333 13.6"
+                                  stroke="currentColor"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                              </svg>
+                              <svg
+                                width="21"
+                                height="21"
+                                stroke-width="1.5"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M10.6667 13.6C9.55558 16.2666 7.88891 18.9333 5.66669 20H16.2222C16.2222 20 17.8889 20 19 18.9333"
+                                  stroke="currentColor"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M15.1111 13.6H4"
+                                  stroke="currentColor"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M17.3333 8.8C17.3333 6.14903 15.0947 4 12.3333 4C9.57189 4 7.33331 6.14903 7.33331 8.8C7.33331 11.451 9.57189 13.6 12.3333 13.6"
+                                  stroke="currentColor"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                              </svg>
+                              <svg
+                                width="21"
+                                height="21"
+                                stroke-width="1.5"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M10.6667 13.6C9.55558 16.2666 7.88891 18.9333 5.66669 20H16.2222C16.2222 20 17.8889 20 19 18.9333"
+                                  stroke="currentColor"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M15.1111 13.6H4"
+                                  stroke="currentColor"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M17.3333 8.8C17.3333 6.14903 15.0947 4 12.3333 4C9.57189 4 7.33331 6.14903 7.33331 8.8C7.33331 11.451 9.57189 13.6 12.3333 13.6"
+                                  stroke="currentColor"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                              </svg>
+                              <svg
+                                width="21"
+                                height="21"
+                                stroke-width="1.5"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M10.6667 13.6C9.55558 16.2666 7.88891 18.9333 5.66669 20H16.2222C16.2222 20 17.8889 20 19 18.9333"
+                                  stroke="currentColor"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M15.1111 13.6H4"
+                                  stroke="currentColor"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M17.3333 8.8C17.3333 6.14903 15.0947 4 12.3333 4C9.57189 4 7.33331 6.14903 7.33331 8.8C7.33331 11.451 9.57189 13.6 12.3333 13.6"
+                                  stroke="currentColor"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                              </svg>
+                            </span>
+                          </div>
+                        </div>
+
+                        <div class="evidence-row">
+                          <strong>Evidence</strong>
+                          <div>
+                            <svg
+                              width="21"
+                              height="21"
+                              stroke-width="1.5"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M8.58737 8.23597L11.1849 3.00376C11.5183 2.33208 12.4817 2.33208 12.8151 3.00376L15.4126 8.23597L21.2215 9.08017C21.9668 9.18848 22.2638 10.0994 21.7243 10.6219L17.5217 14.6918L18.5135 20.4414C18.6409 21.1798 17.8614 21.7428 17.1945 21.3941L12 18.678L6.80547 21.3941C6.1386 21.7428 5.35909 21.1798 5.48645 20.4414L6.47825 14.6918L2.27575 10.6219C1.73617 10.0994 2.03322 9.18848 2.77852 9.08017L8.58737 8.23597Z"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                            <svg
+                              width="21"
+                              height="21"
+                              stroke-width="1.5"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M8.58737 8.23597L11.1849 3.00376C11.5183 2.33208 12.4817 2.33208 12.8151 3.00376L15.4126 8.23597L21.2215 9.08017C21.9668 9.18848 22.2638 10.0994 21.7243 10.6219L17.5217 14.6918L18.5135 20.4414C18.6409 21.1798 17.8614 21.7428 17.1945 21.3941L12 18.678L6.80547 21.3941C6.1386 21.7428 5.35909 21.1798 5.48645 20.4414L6.47825 14.6918L2.27575 10.6219C1.73617 10.0994 2.03322 9.18848 2.77852 9.08017L8.58737 8.23597Z"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                            <svg
+                              width="21"
+                              height="21"
+                              stroke-width="1.5"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M8.58737 8.23597L11.1849 3.00376C11.5183 2.33208 12.4817 2.33208 12.8151 3.00376L15.4126 8.23597L21.2215 9.08017C21.9668 9.18848 22.2638 10.0994 21.7243 10.6219L17.5217 14.6918L18.5135 20.4414C18.6409 21.1798 17.8614 21.7428 17.1945 21.3941L12 18.678L6.80547 21.3941C6.1386 21.7428 5.35909 21.1798 5.48645 20.4414L6.47825 14.6918L2.27575 10.6219C1.73617 10.0994 2.03322 9.18848 2.77852 9.08017L8.58737 8.23597Z"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                            <svg
+                              width="21"
+                              height="21"
+                              stroke-width="1.5"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M8.58737 8.23597L11.1849 3.00376C11.5183 2.33208 12.4817 2.33208 12.8151 3.00376L15.4126 8.23597L21.2215 9.08017C21.9668 9.18848 22.2638 10.0994 21.7243 10.6219L17.5217 14.6918L18.5135 20.4414C18.6409 21.1798 17.8614 21.7428 17.1945 21.3941L12 18.678L6.80547 21.3941C6.1386 21.7428 5.35909 21.1798 5.48645 20.4414L6.47825 14.6918L2.27575 10.6219C1.73617 10.0994 2.03322 9.18848 2.77852 9.08017L8.58737 8.23597Z"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                            <span class="icons-faded">
+                              <svg
+                                width="21"
+                                height="21"
+                                stroke-width="1.5"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M8.58737 8.23597L11.1849 3.00376C11.5183 2.33208 12.4817 2.33208 12.8151 3.00376L15.4126 8.23597L21.2215 9.08017C21.9668 9.18848 22.2638 10.0994 21.7243 10.6219L17.5217 14.6918L18.5135 20.4414C18.6409 21.1798 17.8614 21.7428 17.1945 21.3941L12 18.678L6.80547 21.3941C6.1386 21.7428 5.35909 21.1798 5.48645 20.4414L6.47825 14.6918L2.27575 10.6219C1.73617 10.0994 2.03322 9.18848 2.77852 9.08017L8.58737 8.23597Z"
+                                  stroke="currentColor"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                              </svg>
+                            </span>
+                          </div>
+                        </div>
+
+                        <a
+                          href="https://educationendowmentfoundation.org.uk/education-evidence/teaching-learning-toolkit/reading-comprehension-strategies"
+                          class="govuk-link govuk-link--no-visited-state"
+                          rel="noreferrer noopener"
+                          target="_blank"
+                          >Source (opens in new tab)</a
+                        >
+                      </div>
+                    </th>
+                    <td class="govuk-table__cell">
+                      <p class="govuk-body">
+                        Improving literacy in all subject areas in line with
+                        recommendations in the EEF
+                        <a
+                          href="https://educationendowmentfoundation.org.uk/education-evidence/guidance-reports/literacy-ks3-ks4"
+                          class="govuk-link"
+                          rel="noreferrer noopener"
+                          target="_blank"
+                          >Improving Literacy in Secondary Schools guidance</a
+                        >. We will fund professional development and
+                        instructional coaching focussed on each teacher's
+                        subject area.
+                      </p>
+                    </td>
+                    <td class="govuk-table__cell">£1,234</td>
+                    <td class="govuk-table__cell">
+                      <a
+                        class="govuk-link govuk-link--no-visited-state"
+                        href="#"
+                      >
+                        Edit
+                      </a>
+                      <a
+                        class="govuk-link govuk-link--no-visited-state"
+                        href="#"
+                      >
+                        Delete
+                      </a>
+                    </td>
+                  </tr>
+                  <tr class="govuk-table__row">
+                    <th scope="row" class="govuk-table__header">
+                      <strong>Custom</strong>
+                      <div class="evidence">
+                        <details
+                          class="govuk-details govuk-!-margin-bottom-0"
+                          data-module="govuk-details"
+                        >
+                          <summary class="govuk-details__summary">
+                            <span class="govuk-details__summary-text">
+                              Supporting evidence
+                            </span>
+                          </summary>
+                          <div class="govuk-details__text">
+                            Standardised tests can provide reliable insights
+                            into the specific strengths and weaknesses of each
+                            pupil to help ensure they receive the correct
+                            additional support through interventions or teacher
+                            instruction:
+                            <a
+                              href="https://educationendowmentfoundation.org.uk/tools/assessing-and-monitoring-pupil-progress/testing/standardised-tests/"
+                              class="govuk-link"
+                              rel="noreferrer noopener"
+                              target="_blank"
+                              >Standardised tests | Assessing and Monitoring
+                              Pupil Progress | Education Endowment Foundation |
+                              EEF</a
+                            >
+                          </div>
+                        </details>
+                      </div>
+                    </th>
+                    <td class="govuk-table__cell">
+                      <p class="govuk-body">
+                        Purchase of standardised diagnostic assessments.
+                        Training will be provided for staff to ensure
+                        assessments are interpreted correctly.
+                      </p>
+                    </td>
+                    <td class="govuk-table__cell">£1,234</td>
+                    <td class="govuk-table__cell">
+                      <a
+                        class="govuk-link govuk-link--no-visited-state"
+                        href="#"
+                      >
+                        Edit
+                      </a>
+                      <a
+                        class="govuk-link govuk-link--no-visited-state"
+                        href="#"
+                      >
+                        Delete
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <p class="govuk-body">
+                <a href="#" class="govuk-link govuk-link--no-visited-state"
+                  >Add activity</a
+                >
+              </p>
+
+              <h2 class="govuk-heading-m">Total budgeted</h2>
+              <p class="govuk-body">£2,468</p>
+            </section>
+
+            <section class="activity-container govuk-!-margin-bottom-6">
+              <h3 class="govuk-heading-m">Challenge: School closures</h3>
+
+              <p class="govuk-body">
+                Our assessments, observations and discussions with pupils and
+                families suggest that the education and wellbeing of many of our
+                disadvantaged pupils have been impacted by partial school
+                closures to a greater extent than for other pupils. These
+                findings are backed up by several national studies.
+              </p>
+              <p class="govuk-body">
+                This has resulted in significant knowledge gaps resulting in
+                pupils falling further behind age-related expectations,
+                especially in maths.
+              </p>
+
+              <h2 class="govuk-heading-m">
+                Activites we're undertaking this year
+              </h2>
+
+              <table class="govuk-table">
+                <thead class="govuk-table__head">
+                  <tr class="govuk-table__row">
+                    <th scope="col" class="govuk-table__header">Category</th>
+                    <th scope="col" class="govuk-table__header">
+                      What we plan to do
+                    </th>
+                    <th scope="col" class="govuk-table__header">Budgeted</th>
+                    <th scope="col" class="govuk-table__header"></th>
+                  </tr>
+                </thead>
+                <tbody class="govuk-table__body">
+                  <tr class="govuk-table__row">
+                    <th scope="row" class="govuk-table__header">
+                      <strong>Custom</strong>
+                      <div class="evidence">
+                        <details
+                          class="govuk-details govuk-!-margin-bottom-0"
+                          data-module="govuk-details"
+                        >
+                          <summary class="govuk-details__summary">
+                            <span class="govuk-details__summary-text">
+                              Supporting evidence
+                            </span>
+                          </summary>
+                          <div class="govuk-details__text">
+                            Standardised tests can provide reliable insights
+                            into the specific strengths and weaknesses of each
+                            pupil to help ensure they receive the correct
+                            additional support through interventions or teacher
+                            instruction:
+                            <a
+                              href="https://educationendowmentfoundation.org.uk/tools/assessing-and-monitoring-pupil-progress/testing/standardised-tests/"
+                              class="govuk-link"
+                              rel="noreferrer noopener"
+                              target="_blank"
+                              >Standardised tests | Assessing and Monitoring
+                              Pupil Progress | Education Endowment Foundation |
+                              EEF</a
+                            >
+                          </div>
+                        </details>
+                      </div>
+                    </th>
+                    <td class="govuk-table__cell">
+                      <p class="govuk-body">
+                        Purchase of standardised diagnostic assessments.
+                        Training will be provided for staff to ensure
+                        assessments are interpreted correctly.
+                      </p>
+                    </td>
+                    <td class="govuk-table__cell">£1,234</td>
+                    <td class="govuk-table__cell">
+                      <a
+                        class="govuk-link govuk-link--no-visited-state"
+                        href="#"
+                      >
+                        Edit
+                      </a>
+                      <a
+                        class="govuk-link govuk-link--no-visited-state"
+                        href="#"
+                      >
+                        Delete
+                      </a>
+                    </td>
+                  </tr>
+                  <tr class="govuk-table__row">
+                    <th scope="row" class="govuk-table__header">
+                      <strong>Mastery learning</strong>
+                      <div class="evidence">
+                        <div class="evidence-row">
+                          <strong>Cost</strong>
+                          <div class="icons">
+                            <svg
+                              width="21"
+                              height="21"
+                              stroke-width="1.5"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M10.6667 13.6C9.55558 16.2666 7.88891 18.9333 5.66669 20H16.2222C16.2222 20 17.8889 20 19 18.9333"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M15.1111 13.6H4"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M17.3333 8.8C17.3333 6.14903 15.0947 4 12.3333 4C9.57189 4 7.33331 6.14903 7.33331 8.8C7.33331 11.451 9.57189 13.6 12.3333 13.6"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                            <span class="icons-faded">
+                              <svg
+                                width="21"
+                                height="21"
+                                stroke-width="1.5"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M10.6667 13.6C9.55558 16.2666 7.88891 18.9333 5.66669 20H16.2222C16.2222 20 17.8889 20 19 18.9333"
+                                  stroke="currentColor"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M15.1111 13.6H4"
+                                  stroke="currentColor"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M17.3333 8.8C17.3333 6.14903 15.0947 4 12.3333 4C9.57189 4 7.33331 6.14903 7.33331 8.8C7.33331 11.451 9.57189 13.6 12.3333 13.6"
+                                  stroke="currentColor"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                              </svg>
+                              <svg
+                                width="21"
+                                height="21"
+                                stroke-width="1.5"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M10.6667 13.6C9.55558 16.2666 7.88891 18.9333 5.66669 20H16.2222C16.2222 20 17.8889 20 19 18.9333"
+                                  stroke="currentColor"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M15.1111 13.6H4"
+                                  stroke="currentColor"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M17.3333 8.8C17.3333 6.14903 15.0947 4 12.3333 4C9.57189 4 7.33331 6.14903 7.33331 8.8C7.33331 11.451 9.57189 13.6 12.3333 13.6"
+                                  stroke="currentColor"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                              </svg>
+                              <svg
+                                width="21"
+                                height="21"
+                                stroke-width="1.5"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M10.6667 13.6C9.55558 16.2666 7.88891 18.9333 5.66669 20H16.2222C16.2222 20 17.8889 20 19 18.9333"
+                                  stroke="currentColor"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M15.1111 13.6H4"
+                                  stroke="currentColor"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M17.3333 8.8C17.3333 6.14903 15.0947 4 12.3333 4C9.57189 4 7.33331 6.14903 7.33331 8.8C7.33331 11.451 9.57189 13.6 12.3333 13.6"
+                                  stroke="currentColor"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                              </svg>
+                              <svg
+                                width="21"
+                                height="21"
+                                stroke-width="1.5"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M10.6667 13.6C9.55558 16.2666 7.88891 18.9333 5.66669 20H16.2222C16.2222 20 17.8889 20 19 18.9333"
+                                  stroke="currentColor"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M15.1111 13.6H4"
+                                  stroke="currentColor"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M17.3333 8.8C17.3333 6.14903 15.0947 4 12.3333 4C9.57189 4 7.33331 6.14903 7.33331 8.8C7.33331 11.451 9.57189 13.6 12.3333 13.6"
+                                  stroke="currentColor"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                              </svg>
+                            </span>
+                          </div>
+                        </div>
+
+                        <div class="evidence-row">
+                          <strong>Evidence</strong>
+                          <div>
+                            <svg
+                              width="21"
+                              height="21"
+                              stroke-width="1.5"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M8.58737 8.23597L11.1849 3.00376C11.5183 2.33208 12.4817 2.33208 12.8151 3.00376L15.4126 8.23597L21.2215 9.08017C21.9668 9.18848 22.2638 10.0994 21.7243 10.6219L17.5217 14.6918L18.5135 20.4414C18.6409 21.1798 17.8614 21.7428 17.1945 21.3941L12 18.678L6.80547 21.3941C6.1386 21.7428 5.35909 21.1798 5.48645 20.4414L6.47825 14.6918L2.27575 10.6219C1.73617 10.0994 2.03322 9.18848 2.77852 9.08017L8.58737 8.23597Z"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                            <svg
+                              width="21"
+                              height="21"
+                              stroke-width="1.5"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M8.58737 8.23597L11.1849 3.00376C11.5183 2.33208 12.4817 2.33208 12.8151 3.00376L15.4126 8.23597L21.2215 9.08017C21.9668 9.18848 22.2638 10.0994 21.7243 10.6219L17.5217 14.6918L18.5135 20.4414C18.6409 21.1798 17.8614 21.7428 17.1945 21.3941L12 18.678L6.80547 21.3941C6.1386 21.7428 5.35909 21.1798 5.48645 20.4414L6.47825 14.6918L2.27575 10.6219C1.73617 10.0994 2.03322 9.18848 2.77852 9.08017L8.58737 8.23597Z"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                            <span class="icons-faded">
+                              <svg
+                                width="21"
+                                height="21"
+                                stroke-width="1.5"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M8.58737 8.23597L11.1849 3.00376C11.5183 2.33208 12.4817 2.33208 12.8151 3.00376L15.4126 8.23597L21.2215 9.08017C21.9668 9.18848 22.2638 10.0994 21.7243 10.6219L17.5217 14.6918L18.5135 20.4414C18.6409 21.1798 17.8614 21.7428 17.1945 21.3941L12 18.678L6.80547 21.3941C6.1386 21.7428 5.35909 21.1798 5.48645 20.4414L6.47825 14.6918L2.27575 10.6219C1.73617 10.0994 2.03322 9.18848 2.77852 9.08017L8.58737 8.23597Z"
+                                  stroke="currentColor"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                              </svg>
+                              <svg
+                                width="21"
+                                height="21"
+                                stroke-width="1.5"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M8.58737 8.23597L11.1849 3.00376C11.5183 2.33208 12.4817 2.33208 12.8151 3.00376L15.4126 8.23597L21.2215 9.08017C21.9668 9.18848 22.2638 10.0994 21.7243 10.6219L17.5217 14.6918L18.5135 20.4414C18.6409 21.1798 17.8614 21.7428 17.1945 21.3941L12 18.678L6.80547 21.3941C6.1386 21.7428 5.35909 21.1798 5.48645 20.4414L6.47825 14.6918L2.27575 10.6219C1.73617 10.0994 2.03322 9.18848 2.77852 9.08017L8.58737 8.23597Z"
+                                  stroke="currentColor"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                              </svg>
+                              <svg
+                                width="21"
+                                height="21"
+                                stroke-width="1.5"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M8.58737 8.23597L11.1849 3.00376C11.5183 2.33208 12.4817 2.33208 12.8151 3.00376L15.4126 8.23597L21.2215 9.08017C21.9668 9.18848 22.2638 10.0994 21.7243 10.6219L17.5217 14.6918L18.5135 20.4414C18.6409 21.1798 17.8614 21.7428 17.1945 21.3941L12 18.678L6.80547 21.3941C6.1386 21.7428 5.35909 21.1798 5.48645 20.4414L6.47825 14.6918L2.27575 10.6219C1.73617 10.0994 2.03322 9.18848 2.77852 9.08017L8.58737 8.23597Z"
+                                  stroke="currentColor"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                              </svg>
+                            </span>
+                          </div>
+                        </div>
+
+                        <a
+                          href="https://educationendowmentfoundation.org.uk/education-evidence/teaching-learning-toolkit/mastery-learning"
+                          class="govuk-link govuk-link--no-visited-state"
+                          rel="noreferrer noopener"
+                          target="_blank"
+                          >Source (opens in new tab)</a
+                        >
+                      </div>
+                    </th>
+                    <td class="govuk-table__cell">
+                      <p class="govuk-body">
+                        We will fund teacher release time to embed key elements
+                        of the guidance in school, and to access Maths Hub
+                        resources and CPD offers (including Teaching for Mastery
+                        training).
+                      </p>
+                    </td>
+                    <td class="govuk-table__cell">£1,234</td>
+                    <td class="govuk-table__cell">
+                      <a
+                        class="govuk-link govuk-link--no-visited-state"
+                        href="#"
+                      >
+                        Edit
+                      </a>
+                      <a
+                        class="govuk-link govuk-link--no-visited-state"
+                        href="#"
+                      >
+                        Delete
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <p class="govuk-body">
+                <a href="#" class="govuk-link govuk-link--no-visited-state"
+                  >Add activity</a
+                >
+              </p>
+
+              <h2 class="govuk-heading-m">Total budgeted</h2>
+              <p class="govuk-body">£2,468</p>
+            </section>
+
+            <section class="activity-container govuk-!-margin-bottom-8">
+              <h3 class="govuk-heading-m">
+                Challenge: Metacognition and self-regulation
+              </h3>
+
+              <p class="govuk-body">
+                Our observations suggest many lower attaining disadvantaged
+                pupils lack metacognitive / self-regulation strategies when
+                faced with challenging tasks, notably in their monitoring and
+                evaluation of their answers. This is indicated across the
+                curriculum, particularly maths and science.
+              </p>
+
+              <h2 class="govuk-heading-m">
+                Activites we're undertaking this year
+              </h2>
+
+              <table class="govuk-table">
+                <thead class="govuk-table__head">
+                  <tr class="govuk-table__row">
+                    <th scope="col" class="govuk-table__header">Category</th>
+                    <th scope="col" class="govuk-table__header">
+                      What we plan to do
+                    </th>
+                    <th scope="col" class="govuk-table__header">Budgeted</th>
+                    <th scope="col" class="govuk-table__header"></th>
+                  </tr>
+                </thead>
+                <tbody class="govuk-table__body">
+                  <tr class="govuk-table__row">
+                    <th scope="row" class="govuk-table__header">
+                      <strong>Metacognition and self-regulation</strong>
+                      <div class="evidence">
+                        <div class="evidence-row">
+                          <strong>Cost</strong>
+                          <div class="icons">
+                            <svg
+                              width="21"
+                              height="21"
+                              stroke-width="1.5"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M10.6667 13.6C9.55558 16.2666 7.88891 18.9333 5.66669 20H16.2222C16.2222 20 17.8889 20 19 18.9333"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M15.1111 13.6H4"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M17.3333 8.8C17.3333 6.14903 15.0947 4 12.3333 4C9.57189 4 7.33331 6.14903 7.33331 8.8C7.33331 11.451 9.57189 13.6 12.3333 13.6"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                            <span class="icons-faded">
+                              <svg
+                                width="21"
+                                height="21"
+                                stroke-width="1.5"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M10.6667 13.6C9.55558 16.2666 7.88891 18.9333 5.66669 20H16.2222C16.2222 20 17.8889 20 19 18.9333"
+                                  stroke="currentColor"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M15.1111 13.6H4"
+                                  stroke="currentColor"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M17.3333 8.8C17.3333 6.14903 15.0947 4 12.3333 4C9.57189 4 7.33331 6.14903 7.33331 8.8C7.33331 11.451 9.57189 13.6 12.3333 13.6"
+                                  stroke="currentColor"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                              </svg>
+                              <svg
+                                width="21"
+                                height="21"
+                                stroke-width="1.5"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M10.6667 13.6C9.55558 16.2666 7.88891 18.9333 5.66669 20H16.2222C16.2222 20 17.8889 20 19 18.9333"
+                                  stroke="currentColor"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M15.1111 13.6H4"
+                                  stroke="currentColor"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M17.3333 8.8C17.3333 6.14903 15.0947 4 12.3333 4C9.57189 4 7.33331 6.14903 7.33331 8.8C7.33331 11.451 9.57189 13.6 12.3333 13.6"
+                                  stroke="currentColor"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                              </svg>
+                              <svg
+                                width="21"
+                                height="21"
+                                stroke-width="1.5"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M10.6667 13.6C9.55558 16.2666 7.88891 18.9333 5.66669 20H16.2222C16.2222 20 17.8889 20 19 18.9333"
+                                  stroke="currentColor"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M15.1111 13.6H4"
+                                  stroke="currentColor"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M17.3333 8.8C17.3333 6.14903 15.0947 4 12.3333 4C9.57189 4 7.33331 6.14903 7.33331 8.8C7.33331 11.451 9.57189 13.6 12.3333 13.6"
+                                  stroke="currentColor"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                              </svg>
+                              <svg
+                                width="21"
+                                height="21"
+                                stroke-width="1.5"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M10.6667 13.6C9.55558 16.2666 7.88891 18.9333 5.66669 20H16.2222C16.2222 20 17.8889 20 19 18.9333"
+                                  stroke="currentColor"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M15.1111 13.6H4"
+                                  stroke="currentColor"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                                <path
+                                  d="M17.3333 8.8C17.3333 6.14903 15.0947 4 12.3333 4C9.57189 4 7.33331 6.14903 7.33331 8.8C7.33331 11.451 9.57189 13.6 12.3333 13.6"
+                                  stroke="currentColor"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                              </svg>
+                            </span>
+                          </div>
+                        </div>
+
+                        <div class="evidence-row">
+                          <strong>Evidence</strong>
+                          <div>
+                            <svg
+                              width="21"
+                              height="21"
+                              stroke-width="1.5"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M8.58737 8.23597L11.1849 3.00376C11.5183 2.33208 12.4817 2.33208 12.8151 3.00376L15.4126 8.23597L21.2215 9.08017C21.9668 9.18848 22.2638 10.0994 21.7243 10.6219L17.5217 14.6918L18.5135 20.4414C18.6409 21.1798 17.8614 21.7428 17.1945 21.3941L12 18.678L6.80547 21.3941C6.1386 21.7428 5.35909 21.1798 5.48645 20.4414L6.47825 14.6918L2.27575 10.6219C1.73617 10.0994 2.03322 9.18848 2.77852 9.08017L8.58737 8.23597Z"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                            <svg
+                              width="21"
+                              height="21"
+                              stroke-width="1.5"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M8.58737 8.23597L11.1849 3.00376C11.5183 2.33208 12.4817 2.33208 12.8151 3.00376L15.4126 8.23597L21.2215 9.08017C21.9668 9.18848 22.2638 10.0994 21.7243 10.6219L17.5217 14.6918L18.5135 20.4414C18.6409 21.1798 17.8614 21.7428 17.1945 21.3941L12 18.678L6.80547 21.3941C6.1386 21.7428 5.35909 21.1798 5.48645 20.4414L6.47825 14.6918L2.27575 10.6219C1.73617 10.0994 2.03322 9.18848 2.77852 9.08017L8.58737 8.23597Z"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                            <svg
+                              width="21"
+                              height="21"
+                              stroke-width="1.5"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M8.58737 8.23597L11.1849 3.00376C11.5183 2.33208 12.4817 2.33208 12.8151 3.00376L15.4126 8.23597L21.2215 9.08017C21.9668 9.18848 22.2638 10.0994 21.7243 10.6219L17.5217 14.6918L18.5135 20.4414C18.6409 21.1798 17.8614 21.7428 17.1945 21.3941L12 18.678L6.80547 21.3941C6.1386 21.7428 5.35909 21.1798 5.48645 20.4414L6.47825 14.6918L2.27575 10.6219C1.73617 10.0994 2.03322 9.18848 2.77852 9.08017L8.58737 8.23597Z"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                            <svg
+                              width="21"
+                              height="21"
+                              stroke-width="1.5"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M8.58737 8.23597L11.1849 3.00376C11.5183 2.33208 12.4817 2.33208 12.8151 3.00376L15.4126 8.23597L21.2215 9.08017C21.9668 9.18848 22.2638 10.0994 21.7243 10.6219L17.5217 14.6918L18.5135 20.4414C18.6409 21.1798 17.8614 21.7428 17.1945 21.3941L12 18.678L6.80547 21.3941C6.1386 21.7428 5.35909 21.1798 5.48645 20.4414L6.47825 14.6918L2.27575 10.6219C1.73617 10.0994 2.03322 9.18848 2.77852 9.08017L8.58737 8.23597Z"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+
+                            <span class="icons-faded">
+                              <svg
+                                width="21"
+                                height="21"
+                                stroke-width="1.5"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M8.58737 8.23597L11.1849 3.00376C11.5183 2.33208 12.4817 2.33208 12.8151 3.00376L15.4126 8.23597L21.2215 9.08017C21.9668 9.18848 22.2638 10.0994 21.7243 10.6219L17.5217 14.6918L18.5135 20.4414C18.6409 21.1798 17.8614 21.7428 17.1945 21.3941L12 18.678L6.80547 21.3941C6.1386 21.7428 5.35909 21.1798 5.48645 20.4414L6.47825 14.6918L2.27575 10.6219C1.73617 10.0994 2.03322 9.18848 2.77852 9.08017L8.58737 8.23597Z"
+                                  stroke="currentColor"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                              </svg>
+                            </span>
+                          </div>
+                        </div>
+
+                        <a
+                          href="https://educationendowmentfoundation.org.uk/education-evidence/teaching-learning-toolkit/metacognition-and-self-regulation"
+                          class="govuk-link govuk-link--no-visited-state"
+                          rel="noreferrer noopener"
+                          target="_blank"
+                          >Source (opens in new tab)</a
+                        >
+                      </div>
+                    </th>
+                    <td class="govuk-table__cell">
+                      <p class="govuk-body">
+                        Developing metacognitive and self-regulation skills in
+                        all pupils. This will involve ongoing teacher training
+                        and support and release time. It will first be rolled
+                        out in maths and science followed by other subjects.
+                      </p>
+                    </td>
+                    <td class="govuk-table__cell">£1,234</td>
+                    <td class="govuk-table__cell">
+                      <a
+                        class="govuk-link govuk-link--no-visited-state"
+                        href="#"
+                      >
+                        Edit
+                      </a>
+                      <a
+                        class="govuk-link govuk-link--no-visited-state"
+                        href="#"
+                      >
+                        Delete
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <p class="govuk-body">
+                <a href="#" class="govuk-link govuk-link--no-visited-state"
+                  >Add activity</a
+                >
+              </p>
+
+              <h2 class="govuk-heading-m">Total budgeted</h2>
+              <p class="govuk-body">£1,234</p>
+            </section>
+
+            <h2 class="govuk-heading-m">Grand total budgeted</h2>
+            <p class="govuk-body">£8,638</p>
+
+            <hr
+              class="govuk-section-break govuk-section-break--xl govuk-section-break--visible"
+            />
+
+            <h2 class="govuk-heading-m">Complete this section</h2>
+
+            <p class="govuk-body">
+              By marking this section complete you are confirming that, to the
+              best of your knowledge, the details you are providing are correct.
+            </p>
+
+            <button class="govuk-button" data-module="govuk-button">
+              Mark as complete
+            </button>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <footer class="govuk-footer" role="contentinfo">
+      <div class="govuk-width-container">
+        <div class="govuk-footer__meta">
+          <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+            <h2 class="govuk-visually-hidden">Support links</h2>
+            <ul class="govuk-footer__inline-list">
+              <li class="govuk-footer__inline-list-item">
+                <a class="govuk-footer__link" href="#1"> Help </a>
+              </li>
+              <li class="govuk-footer__inline-list-item">
+                <a class="govuk-footer__link" href="#2"> Cookies </a>
+              </li>
+              <li class="govuk-footer__inline-list-item">
+                <a class="govuk-footer__link" href="#3"> Contact </a>
+              </li>
+              <li class="govuk-footer__inline-list-item">
+                <a class="govuk-footer__link" href="#4">
+                  Terms and conditions
+                </a>
+              </li>
+            </ul>
+
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              class="govuk-footer__licence-logo"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 483.2 195.7"
+              height="17"
+              width="41"
+            >
+              <path
+                fill="currentColor"
+                d="M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145"
+              />
+            </svg>
+            <span class="govuk-footer__licence-description">
+              All content is available under the
+              <a
+                class="govuk-footer__link"
+                href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+                rel="license"
+                >Open Government Licence v3.0</a
+              >, except where otherwise stated
+            </span>
+          </div>
+          <div class="govuk-footer__meta-item">
+            <a
+              class="govuk-footer__link govuk-footer__copyright-logo"
+              href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/"
+              >© Crown copyright</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./javascript/govuk-frontend-4.2.0.min.js"></script>
+    <script>
+      window.GOVUKFrontend.initAll();
+    </script>
+  </body>
+</html>

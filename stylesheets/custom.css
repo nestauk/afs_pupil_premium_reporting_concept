@@ -1,0 +1,21 @@
+.evidence {
+  font-weight: 400;
+  padding-top: 1rem;
+  /* margin-bottom: 1rem; */
+  font-size: 1rem;
+  width: 220px;
+}
+.evidence-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.4rem;
+}
+.icons-faded {
+  color: #ccc;
+}
+
+.activity-container {
+  padding: 1rem;
+  border: 2px solid black;
+}
